@@ -32,7 +32,7 @@ At the end of the file `[dspace-source]/dspace/modules/additions/pom.xml` you wi
   &lt;dependency&gt;
     &lt;groupId&gt;de.the-library-code.dspace&lt;/groupId&gt;
     &lt;artifactId&gt;addon-identifiers-enduring-submission-api&lt;/artifactId&gt;
-    &lt;version&gt;5.8.0&lt;/version&gt;
+    &lt;version&gt;[5.8.0,5.9.0)&lt;/version&gt;
     &lt;type&gt;jar&lt;/type&gt;
   &lt;/dependency&gt;
 </pre>
@@ -43,13 +43,13 @@ At the end of the file `[dspace-source]/dspace/modules/jspui/pom.xml` you will f
   &lt;dependency&gt;
       &lt;groupId&gt;de.the-library-code.dspace&lt;/groupId&gt;
       &lt;artifactId&gt;addon-identifiers-enduring-submission-api&lt;/artifactId&gt;
-      &lt;version&gt;5.8.0&lt;/version&gt;
+      &lt;version&gt;[5.8.0,5.9.0)&lt;/version&gt;
       &lt;type&gt;jar&lt;/type&gt;
   &lt;/dependency&gt;
   &lt;dependency&gt;
       &lt;groupId&gt;de.the-library-code.dspace&lt;/groupId&gt;
       &lt;artifactId&gt;addon-identifiers-enduring-submission-jspui&lt;/artifactId&gt;
-      &lt;version&gt;5.8.0&lt;/version&gt;
+      &lt;version&gt;[5.8.0,5.9.0)&lt;/version&gt;
       &lt;type&gt;war&lt;/type&gt;
   &lt;/dependency&gt;
 </pre>
