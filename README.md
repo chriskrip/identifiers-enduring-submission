@@ -1,8 +1,8 @@
-[![DSpace Logo](dspace_logo.png)](http://www.dspace.org)
-
 [![The Library Code GmbH](https://the-library-code.de/the_library_code_gmbh.png)](https://www.the-library-code.de)
 
 [![TUHH](TUHH-Logo.png)](https://www.tuhh.de)
+
+[![DSpace Logo](dspace_logo.png)](http://www.dspace.org)
 
 # Persistent identifiers enduring Submission
 
