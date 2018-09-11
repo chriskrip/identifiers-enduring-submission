@@ -12,7 +12,7 @@ This is an addition to [DSpace](http://www.dspace.org) (on github [@DSpace/DSpac
 
 DSpace source code is freely available under a standard [BSD 3-Clause license](https://opensource.org/licenses/BSD-3-Clause), so is the source code of this addon. The full license is available at http://www.dspace.org/license/.
 
-This addion was developped by [The Library Code](https://www.the-library-code.de) with the support of [Technische Universität Hamburg](https://www.tuhh.de).
+This addion was developed by [The Library Code](https://www.the-library-code.de) with the support of [Technische Universität Hamburg](https://www.tuhh.de).
 
 ## Branches
 
