@@ -1,5 +1,9 @@
 [![The Library Code GmbH](https://the-library-code.de/the_library_code_gmbh.png)](https://www.the-library-code.de)
 
+[![TUHH](TUHH-Logo.png)](https://www.tuhh.de)
+
+[![DSpace Logo](dspace_logo.png)](http://www.dspace.org)
+
 # Persistent identifiers enduring Submission
 
 This is an addition to [DSpace](http://www.dspace.org) (on github [@DSpace/DSpace](https://github.com/DSpace/DSpace)) to show persistent identifiers enduring the submission of any new item. It currently supports DSpace's JSPUI in version 5.8 only, but it should be simple to be ported to XMLUI or DSpace's version 6.x. If you need help porting it, please don't hesitate to contact [The Library Code](https://www.the-library-code.de).
