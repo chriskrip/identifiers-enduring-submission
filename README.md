@@ -4,7 +4,7 @@
 
 [![DSpace Logo](dspace_logo.png)](http://www.dspace.org)
 
-# Persistent identifiers enduring Submission
+# Persistent Identifiers During Submission
 
 This is an addition to [DSpace](http://www.dspace.org) (on github [@DSpace/DSpace](https://github.com/DSpace/DSpace)) to show persistent identifiers during the submission of a new item. This enables submitters to add recommendations on how to cite an item to the item's files.
 
