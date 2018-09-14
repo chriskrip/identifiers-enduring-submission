@@ -8,7 +8,7 @@
 
 This is an addition to [DSpace](http://www.dspace.org) (on github [@DSpace/DSpace](https://github.com/DSpace/DSpace)) to show persistent identifiers during the submission of a new item. This enables submitters to add recommendations on how to cite an item to the item's files.
 
-Currently DSpace's JSPUI in version 5.8 is supported only, but it should be simple to port this add-on to XMLUI or DSpace's version 6.x. If you need help porting it, please don't hesitate to contact [The Library Code](https://www.the-library-code.de). If you port it yourself, we are grateful if you create a pull request.
+Currently, only JSPUI in DSpace version 5.8 is supported, but it should be simple to port this add-on to XMLUI or future versions of DSpace 6. If you need help porting it, please don't hesitate to contact [The Library Code](https://www.the-library-code.de). If you port it yourself, we would be grateful if you could also create a pull request.
 
 ## Contributors and License
 
@@ -58,11 +58,11 @@ At the end of the file `[dspace-source]/dspace/modules/jspui/pom.xml` you will f
 
 Add the content of the file [additional-Messages.properties](https://github.com/the-library-code/identifiers-enduring-submission/blob/dspace-5.8-addition/additional-Messages.properties) to your message catalog. Your message catalog is located either under `[dspace-src]/dspace/modules/jspui/src/main/resources/Messages.properties` or `[dspace-src]/dspace-api/src/main/resources/Messages.properties`.
 
-Then change your configuration as described below, re-compile and update DSpace, and restart Tomcat to finish the installtion.
+Then change your configuration as described below, recompile and update DSpace, and restart Tomcat to finish the installtion.
 
 ### Installing the add-on by copying its code into your overlays
 
-Copy the files within the directories [jspui/src](https://github.com/the-library-code/identifiers-enduring-submission/tree/dspace-5.8-addition/jspui/src) and [api/src](https://github.com/the-library-code/identifiers-enduring-submission/tree/dspace-5.8-addition/api/src) into your overlays (`[dspace-src]/dspace/modules/additions/src/...` and `[dspace-src]/dspace/modules/jspui/src/...`). Please pay attention not to overwrite any locally changed files. Add the content of the file [additional-Messages.properties](https://github.com/the-library-code/identifiers-enduring-submission/blob/dspace-5.8-addition/additional-Messages.properties) to your message catalog. Your message catalog is located either under `[dspace-src]/dspace/modules/jspui/src/main/resources/Messages.properties` or `[dspace-src]/dspace-api/src/main/resources/Messages.properties`. Change your configuration as described in the following section of this readme, recompile and update DSpace, and restart Tomcat to finish the installation.
+Copy the files within the directories [jspui/src](https://github.com/the-library-code/identifiers-enduring-submission/tree/dspace-5.8-addition/jspui/src) and [api/src](https://github.com/the-library-code/identifiers-enduring-submission/tree/dspace-5.8-addition/api/src) into your overlays (`[dspace-src]/dspace/modules/additions/src/...` and `[dspace-src]/dspace/modules/jspui/src/...`). Please pay attention not to overwrite any locally changed files. Add the content of the file [additional-Messages.properties](https://github.com/the-library-code/identifiers-enduring-submission/blob/dspace-5.8-addition/additional-Messages.properties) to your message catalog. Your message catalog is located either under `[dspace-src]/dspace/modules/jspui/src/main/resources/Messages.properties` or `[dspace-src]/dspace-api/src/main/resources/Messages.properties`. Change your configuration as described in the following section of this README, recompile and update DSpace, and restart Tomcat to finish the installation.
 
 This add-on added the following files:
 
@@ -74,7 +74,7 @@ This add-on added the following files:
 
 ## Configuration
 
-To use this add-on you will have to change the configuration of DSpace's submission process. You can find detailed information in [this section of the DSpace manual](https://wiki.duraspace.org/display/DSDOC5x/Submission+User+Interface). You will have to add two steps at the point in the submission process where the identifiers should be shown. We recommend to do this after the items are described and before any upload step. To do so, you need to change the file `item-submission.xml` in your configuration. The lines to add are listed below this paragraph. We also added an example to [config/item-submission.xml](https://github.com/the-library-code/identifiers-enduring-submission/blob/dspace-5.8-addition/config/item-submission.xml#L210-L226).
+To use this add-on you will have to change the configuration of DSpace's submission process. You can find detailed information in [this section of the DSpace manual](https://wiki.duraspace.org/display/DSDOC5x/Submission+User+Interface). You will have to add two steps at the point in the submission process where the identifiers should be shown. We recommend to do this after the items are described and before any upload step. To do so, you need to change the file `item-submission.xml` in your configuration. The lines to add are listed below this paragraph. We have also added an example to [config/item-submission.xml](https://github.com/the-library-code/identifiers-enduring-submission/blob/dspace-5.8-addition/config/item-submission.xml#L210-L226).
 
 <pre>
  &lt;step&gt;
@@ -89,7 +89,7 @@ To use this add-on you will have to change the configuration of DSpace's submiss
   &lt;/step&gt; 
 </pre>
 
-Per default all identifiers will be listed. You can change this and configure which identifiers are shown by adding a configuration property with the key `webui.submission.list-identifiers` to your dspace.cfg. Currently a space-separated list containing any of the following values is supported:
+By default all identifiers will be listed. You can change this and configure which identifiers are shown by adding a configuration property with the key `webui.submission.list-identifiers` to your `dspace.cfg`. Currently a space-separated list containing any of the following values is supported:
 
  * all
  * handle
