@@ -117,8 +117,8 @@ public class JSPShowIdentifiersStep extends JSPStep {
             try {
                 doi = IdentifierServiceFactory.getInstance().getDOIService().DOIToExternalForm(doi);
             } catch (IdentifierException ex) {
-                // We got a DOI from the identifier service, but our DOI class is unable to bring it
-                // into an external form? That is wired.
+                // We got a DOI from the identifier service, but our DOI service is unable to bring
+                // it into an external form? That is wired.
                 log.error("Cannot transform a DOI to its external form. That is wired, please bugfix this!");
             }
         }

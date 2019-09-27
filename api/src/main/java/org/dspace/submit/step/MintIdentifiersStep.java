@@ -105,7 +105,7 @@ public class MintIdentifiersStep extends AbstractProcessingStep {
         IdentifierService identifierService = IdentifierServiceFactory.getInstance().getIdentifierService();
         try {
             if (identifierService != null) {
-                // reserving let the identifier service calls mint on all IdentivierServiceProvider.
+                // mint the identifiers
                 identifierService.mint(context, item);
             }
         } catch (IdentifierException ex) {
