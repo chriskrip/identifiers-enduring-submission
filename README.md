@@ -70,6 +70,12 @@ This add-on added the following files:
  * jspui/src/main/webapp/submit/list-identifiers.jsp
  * jspui/src/main/webapp/submit/review-identifiers.jsp
 
+This add-on changes and overrides the following files:
+
+  * api/src/main/java/org/dspace/identifier/IdentifierServiceImpl.java
+  * api/src/main/java/org/dspace/identifier/service/IdentifierService.java
+
+
 ## Configuration
 
 To use this add-on you will have to change the configuration of DSpace's submission process. You can find detailled information in [this section of the DSpace manual](https://wiki.duraspace.org/display/DSDOC6x/Submission+User+Interface). You will have to add two steps at the point in the submission process where the identifiers should be shown. We recommend to do this after the items are described and before any upload step. To do so, you need to change the file `item-submission.xml` in your configuration. The lines to add are listed below this paragraph. We also added an example to [config/item-submission.xml](https://github.com/the-library-code/identifiers-enduring-submission/blob/dspace-6.3-addition/config/item-submission.xml#L210-L226).
