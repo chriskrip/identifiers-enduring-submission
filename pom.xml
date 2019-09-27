@@ -4,7 +4,7 @@
    <groupId>de.the-library-code.dspace</groupId>
    <artifactId>addon-identifiers-enduring-submission</artifactId>
    <packaging>pom</packaging>
-   <version>6.0-SNAPSHOT</version>
+   <version>6.3.0-SNAPSHOT</version>
    <name>DSpace Addon: Identifiers enduring submission</name>
    <description>
    	This is an addon to DSpace to mint and list persistent identifiers enduring the submission of new items.
@@ -32,7 +32,7 @@
         <!-- 'root.basedir' is the path to the root [dspace-src] dir. It must be redefined by each child POM,
              as it is used to reference the LICENSE_HEADER and *.properties file(s) in that directory. -->
         <root.basedir>${basedir}</root.basedir>
-        <dspace.version>[6.0, )</dspace.version>
+        <dspace.version>[6.3, 6.4)</dspace.version>
     </properties>
 
     <scm>
@@ -90,7 +90,7 @@
             <!-- Used to compile all Java classes -->
               <plugin>
                   <artifactId>maven-compiler-plugin</artifactId>
-                  <version>3.1</version>
+                  <version>3.5.1</version>
                   <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
@@ -100,7 +100,7 @@
               <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>2.5</version>
+                <version>2.6</version>
                 <configuration>
                     <archive>
                         <manifest>
@@ -114,7 +114,7 @@
               <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.4</version>
+                <version>2.6</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <archive>
@@ -129,7 +129,7 @@
              <plugin>
                 <groupId>com.mycila</groupId>
                 <artifactId>license-maven-plugin</artifactId>
-                <version>2.6</version>
+                <version>2.11</version>
              </plugin>
                 <!-- Used to generate a new release via Sonatype (see release profile below). -->
                 <plugin>
@@ -163,7 +163,7 @@
       <plugins>
          <plugin>
             <artifactId>maven-release-plugin</artifactId>
-            <version>2.5</version>
+            <version>2.5.3</version>
             <configuration>
                 <!-- During release:perform, enable the "release" profile (see below) -->
                 <releaseProfiles>release</releaseProfiles>
