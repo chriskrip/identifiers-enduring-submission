@@ -6,7 +6,7 @@
 
 # Persistent Identifiers During Submission
 
-This is an addition to [DSpace](http://www.dspace.org) (on github [@DSpace/DSpace](https://github.com/DSpace/DSpace)) to show persistent identifiers during the submission of any new item. It currently supports DSpace's JSPUI in version 5.8 only, but it should be simple to port to XMLUI or future versions of DSpace 6. If you need help porting it, please don't hesitate to contact [The Library Code](https://www.the-library-code.de).
+This is an addition to [DSpace](http://www.dspace.org) (on github [@DSpace/DSpace](https://github.com/DSpace/DSpace)) to show persistent identifiers during the submission of any new item. It currently supports DSpace's JSPUI in version 5.8 and 6.3, but it should be simple to port to XMLUI or future versions of DSpace 6. If you need help porting it, please don't hesitate to contact [The Library Code](https://www.the-library-code.de).
 
 ## Contributors and License
 
@@ -16,5 +16,5 @@ This addon was developed by [The Library Code](https://www.the-library-code.de) 
 
 ## Branches
 
-We will add one branch per supported version. Currently DSpace 5.8 is the only supported version yet: [dspace-5.8-addition](https://github.com/the-library-code/identifiers-enduring-submission/tree/dspace-5.8-addition).
+We will add one branch per supported version. Currently DSpace 5.8 and 6.3 are the only supported versions: [dspace-5.8-addition](https://github.com/the-library-code/identifiers-enduring-submission/tree/dspace-5.8-addition) and [dspace-6.3-addition](https://github.com/the-library-code/identifiers-enduring-submission/tree/dspace-6.3-addition).
 
