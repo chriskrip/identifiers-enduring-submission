@@ -1,0 +1,8 @@
+<!--This contains example messages for XMLUIShowIdentifiersStep.
+To use them copy/paste these messages into your own messages_de.xml-->
+
+<message key="xmlui.Submission.submit.ShowIdentifiersStep.head">Persistente Identifikatoren</message>
+<message key="xmlui.Submission.submit.ShowIdentifiersStep.doiLabel">DOI</message>
+<message key="xmlui.Submission.submit.ShowIdentifiersStep.handleLabel">Handle</message>
+<message key="xmlui.Submission.submit.ShowIdentifiersStep.infoMessage">Der folgende DOI wird der Publikation zugewiesen. Sie können ihn kopieren und ggf. in dazugehörigen Dokumenten einfügen. Bitte beachten Sie, dass dieser DOI erst einmal nur für Sie reserviert ist. Im Fall einer abgewiesenen Einreichung und darauffolgender Neuanmeldung, kann es auch zu einem neuen DOI kommen.</message>
+
