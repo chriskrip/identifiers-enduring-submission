@@ -1,0 +1,8 @@
+<!--This file contains example messages for XMLUIShowIdentifiersStep.
+To use them copy/paste these messages into your own messages_de.xml-->
+
+    <!--org.dspace.app.xmlui.Submission.submit.XMLUIShowIdentifiersStep -->
+<message key="xmlui.Submission.submit.ShowIdentifiersStep.head">Persistent Identifiers</message>
+<message key="xmlui.Submission.submit.ShowIdentifiersStep.doiLabel">DOI:</message>
+<message key="xmlui.Submission.submit.ShowIdentifiersStep.handleLabel">Handle:</message>
+<message key="xmlui.Submission.submit.ShowIdentifiersStep.infoMessage">The following DOI is assigned to the publication. You can copy it and paste it into related documents if necessary. Please note that this DOI is only reserved for you at this point. In case of a rejected submission and subsequent re-submission, it may also result in a new DOI.</message>
